@@ -1,0 +1,68 @@
+.floating-field {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 60px;
+}
+
+.floating-field__icon {
+  position: absolute;
+  left: 14px;
+  width: 18px;
+  height: 18px;
+  color: #667085;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.floating-field input {
+  width: 100%;
+  min-height: 60px;
+  padding: 1.5rem 1rem 0.75rem 2.9rem;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  background: #fff;
+  font-size: 1rem;
+  color: #0f172a;
+  transition:
+    border-color 150ms ease,
+    box-shadow 150ms ease,
+    background-color 150ms ease;
+}
+
+.floating-field input:focus {
+  outline: none;
+  border-color: var(--brand-primary);
+  box-shadow: 0 0 0 3px rgba(1, 43, 82, 0.08);
+}
+
+.floating-field input:focus-visible {
+  outline: 2px solid var(--brand-primary);
+  outline-offset: 2px;
+}
+
+.floating-field label {
+  position: absolute;
+  left: 2.8rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  line-height: 1;
+  color: #64748b;
+  background: transparent;
+  pointer-events: none;
+  transition:
+    top 180ms ease,
+    transform 180ms ease,
+    font-size 180ms ease,
+    color 180ms ease,
+    background 180ms ease;
+}
+
+.floating-field input:focus + label,
+.floating-field input:not(:placeholder-shown) + label {
+  top: 0.85rem;
+  transform: translateY(0);
+  font-size: 0.72rem;
+  background: rgba(255, 255, 255, 0.9);
+}

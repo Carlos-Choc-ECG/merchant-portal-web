@@ -34,3 +34,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# devcontainer
+/.devcontainer/
+
+# local Claude Code tooling state (permission allowlists, lock files)
+/.claude/
+/docs/
+/.superpowers/

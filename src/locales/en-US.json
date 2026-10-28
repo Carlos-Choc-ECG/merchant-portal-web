@@ -1,0 +1,8 @@
+{
+  "auth": {
+    "welcome": "Welcome to {brandName}",
+    "subtitle": "Enter your email address and we'll send you a secure code to sign in.",
+    "emailLabel": "Email address",
+    "submit": "Send code"
+  }
+}

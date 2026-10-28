@@ -1,0 +1,31 @@
+# Version control
+.git
+.gitignore
+
+# Dependencies — reinstalled inside the container by the deps stage
+node_modules
+
+# Next.js build output — produced inside the container by the builder stage
+.next
+
+# Environment files — inject secrets at runtime via docker run -e or compose
+.env
+.env.*
+!.env.example
+
+# Development tooling not needed in the image
+.prettierrc
+.prettierignore
+.eslintrc*
+eslint.config.*
+
+# OS artefacts
+.DS_Store
+Thumbs.db
+
+# Editor config
+.vscode
+.idea
+
+# Documentation
+*.md
